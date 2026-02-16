@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digit LOB Portal</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Title */
+    .title {
+        font-size: 70px;
+        font-weight: bold;
+        color: white;
+        margin-top: 40px;
+        letter-spacing: 3px;
+    }
+
+    /* Card Container */
+    .lob-container {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        width: 80%;
+        max-width: 900px;
+    }
+
+    /* LOB Cards */
+    .lob-card {
+        background: white;
+        padding: 40px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .lob-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        background: #fff7f0;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="title">DIGIT</div>
+
+<div class="lob-container">
+
+   
+
+    
+
+    <div class="lob-card" onclick="goTo('https://liberty-excel-two-wheelers.vercel.app')">
+        Two Wheeler
+    </div>
+
+    <div class="lob-card" onclick="goTo('https://liberty-excel-private-car.vercel.app')">
+        Private Car
+    </div>
+
+    <div class="lob-card" onclick="goTo('https://liberty-excel-cv.vercel.app')">
+        Carrying Vehicle
+    </div>
+
+</div>
+
+<script>
+    function goTo(url) {
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
